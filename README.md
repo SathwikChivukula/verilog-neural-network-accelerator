@@ -50,6 +50,49 @@ Flow chart:
 
 
 
+⚙️ Design Methodology
+
+
+🔸 Data Flow
+
+Input data is applied to the first layer
+
+
+Each layer performs:
+Weighted sum (MAC operation)
+Activation (ReLU/Sigmoid)
+Intermediate outputs propagate through all layers
+Final classification is obtained using maxFinder
+
+🔸 Arithmetic
+
+Fixed-point representation used for efficient hardware implementation
+Trade-off between precision and resource utilization
+
+🔸 Parallelism
+Neurons operate in parallel within each layer
+Improves throughput and performance
+
+
+🛠️ Tools & Technologies
+
+
+HDL: Verilog
+Simulation: Vivado XSIM / ModelSim / QuestaSim
+Synthesis: Vivado
+Target: FPGA-based implementation
+
+
+🧪 Verification
+Functional verification performed using simulation testbenches
+Multiple input samples tested against expected outputs
+Output accuracy evaluated across test dataset
+
+
+✅ Observations
+Majority of outputs achieved correct classification
+Minor deviations due to fixed-point precision
+
 
 
 
@@ -60,3 +103,27 @@ RTL Schematic:
 
 
 ![1747939140274](https://github.com/user-attachments/assets/805ef32d-ffc6-4659-8a5f-63fb0b2a9bf7)
+
+
+
+Results:
+
+
+Accuracy:
+
+![1747969872678](https://github.com/user-attachments/assets/024acf42-01b4-4987-96f8-9a3e8398e490)
+
+
+FPGA Resource Utilization:
+
+![1747939151090](https://github.com/user-attachments/assets/dba026d8-4464-49d6-ad04-3833a2a1b32a)
+
+
+
+
+
+
+
+
+
+
