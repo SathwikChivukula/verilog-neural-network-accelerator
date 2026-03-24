@@ -1,4 +1,4 @@
-Design and Implementation of an FPGA-Based Neural Network Accelerator Using Verilog
+## Design and Implementation of an FPGA-Based Neural Network Accelerator Using Verilog
 
 This project uses Verilog HDL to design and implement a hardware-based neural network accelerator that targets FPGA platforms for effective inference. The suggested architecture is made up of several fully connected layers, each of which is made up of parallel neuron units that execute multiply-accumulate (MAC) operations before using non-linear activation functions like sigmoid and ReLU. Pre-trained weights are stored in a separate memory module, allowing for scalable and modular design.
 
