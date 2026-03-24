@@ -8,10 +8,18 @@ With a large portion mapped to DSP blocks for optimized arithmetic operations, t
 
 🎯 Objectives
 Design a hardware accelerator for neural network inference
+
 Implement a scalable multi-layer architecture in RTL
+
 Optimize computation using DSP-based MAC operations
+
 Integrate AXI-Lite interface for system-level communication
+
 Evaluate performance in terms of accuracy and resource utilization
 
+
 RTL Schematic:
+
+
+
 ![1747939140274](https://github.com/user-attachments/assets/805ef32d-ffc6-4659-8a5f-63fb0b2a9bf7)
