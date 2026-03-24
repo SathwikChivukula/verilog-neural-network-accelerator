@@ -1,2 +1,1 @@
-# verilog-neural-network-accelerator
-FPGA-based multi-layer neural network accelerator implemented in Verilog with AXI interface and ~90% inference accuracy.
+Design and Implementation of an FPGA-Based Neural Network Accelerator Using Verilog
