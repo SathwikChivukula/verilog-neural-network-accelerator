@@ -5,3 +5,13 @@ This project uses Verilog HDL to design and implement a hardware-based neural ne
 An AXI-Lite interface is included to enable communication between the accelerator and an external processor, facilitating system-level integration. Fixed-point arithmetic is used in the design to strike a compromise between hardware resource usage and computational accuracy. Through simulation, functional verification is carried out, confirming accurate classification across a variety of test inputs.
 
 With a large portion mapped to DSP blocks for optimized arithmetic operations, the synthesized design shows effective use of FPGA resources. The accelerator achieves about 90% inference accuracy, according to experimental results, demonstrating the viability of directly implementing neural network models in hardware. In comparison to software-based methods, this work shows the potential of hardware acceleration for machine learning applications, providing better performance and energy efficiency.
+
+🎯 Objectives
+Design a hardware accelerator for neural network inference
+Implement a scalable multi-layer architecture in RTL
+Optimize computation using DSP-based MAC operations
+Integrate AXI-Lite interface for system-level communication
+Evaluate performance in terms of accuracy and resource utilization
+
+RTL Schematic:
+![1747939140274](https://github.com/user-attachments/assets/805ef32d-ffc6-4659-8a5f-63fb0b2a9bf7)
