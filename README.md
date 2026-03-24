@@ -18,6 +18,43 @@ Integrate AXI-Lite interface for system-level communication
 Evaluate performance in terms of accuracy and resource utilization
 
 
+🧠 System Architecture:
+
+The neural network is implemented as a sequence of hardware layers:
+
+Input → Layer 1 → Layer 2 → Layer 3 → Layer 4 → Output (Classification)
+
+🔹 Key Modules:
+
+
+cnet.v → Top-level module integrating the full design
+
+Layer_1.v – Layer_4.v → Multi-layer neural network stages
+
+neuron.v → Core Multiply-Accumulate (MAC) computation unit
+
+relu.v → ReLU activation function
+
+Sig_ROM.v → Sigmoid activation using lookup table
+
+Weight_Memory.v → Stores pre-trained weights
+
+maxFinder.v → Determines predicted output class
+
+
+axi_lite_wrapper.v → AXI interface for communication
+
+Flow chart:
+
+<img width="1151" height="4639" alt="diagram-export-11-26-2024-2_00_11-PM" src="https://github.com/user-attachments/assets/0b91f593-976f-455b-b652-4afc26b71ded" />
+
+
+
+
+
+
+
+
 RTL Schematic:
 
 
